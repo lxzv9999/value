@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>  
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.js 
+
+"></script>
+<script type="text/javascript">
+	$.ajax({
+		url:"http://localhost:3000/lxz1",
+		type:"post",
+		dataType:"json",
+		data:{abc:2},
+		success:function(e){
+			$('body').append('<P>'+e.name 
+
++'</p>');
+		}
+	})
+</script>
+<body>
+<input id="inp"></input>
+<button id="but">提交</button>
+</body>
+</html>
